@@ -1,0 +1,820 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schools Site</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Ruda:400,900,700' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/prettyphoto/css/prettyphoto.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/hover/hoverex-all.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/jetmenu/jetmenu.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owl-carousel/owl-carousel.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/colors/blue.css' %}">
+
+</head>
+<body>
+<div class="topbar clearfix">
+    <div class="container">
+      <div class="col-lg-12 text-right">
+        <div class="social_buttons">
+          <a href="www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end topbar -->
+<header class="header">
+    <div class="container">
+      <div class="site-header clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-12 title-area">
+          <div class="site-title" id="title">
+            <a href=""title="">
+              <h1>sites<span>.com</span></h1>
+            </a>
+          </div>
+        </div>
+        <!-- title area -->
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div id="nav" class="right">
+            <div class="container clearfix">
+              <ul id="jetmenu" class="jetmenu blue">
+                  <li class="active"><a href="{% url 'home' %}"><h5>Home</h5></a>
+                </li>
+                        <li><a href="{% url 'about' %}"><h5>About Us</h5></a>
+                  <li><a href="{% url 'education' %}" ><h5><i class="glyphicon glyphicon-education"> Education</i></h5></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+                   <li><a href="#"><h5>login</h5></a>
+                  <ul class="dropdown">
+                    <li><a href="digital-download.html">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+        </div>
+        <!-- title area -->
+      </div>
+      <!-- site header -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header -->
+<center><h2>Dhaka Division</h2></center>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Schools Name</th>
+        <th scope="col">Location</th>
+      <th scope="col">Link Site</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Stride International School</td>
+        <td>Uttara sector 7, Road 27, house 16</td>
+        <td><button onclick="window.location.href='https://stride-international-school.business.site/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>LORDS-An English Medium School</td>
+         <td>House-45/A, Road-116, Gulshan 1, Dhaka, Bangladesh</td>
+       <td><button onclick="window.location.href='https://www.lordsbd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">3</th>
+      <td>Sydney International School</td>
+         <td>House # 08, Road # 09, Block # J, Baridhara, Dhaka</td>
+       <td><button onclick="window.location.href='http://www.sis.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">4</th>
+      <td>Pledge Harbour International School</td>
+        <td>Singer Dighi, Maona, Sreepur, Gazipur-1741</td>
+        <td><button onclick="window.location.href='http://pledgeharbor.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>BAF Shaheen English Medium School</td>
+         <td>Tejgaon, Dhaka Cantonment, Dhaka-1206</td>
+       <td><button onclick="window.location.href='http://bafsems.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">6</th>
+      <td>Yale International School</td>
+         <td>House: 41, Road: 04, Sector: 03, Uttara Model Town, Dhaka-1230</td>
+       <td><button onclick="window.location.href='https://yis.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">7</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>French International School of Dhaka</td>
+         <td>House-45 Embassy Road, Plot 13, Baridhara, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://bd.ambafrance.org/The-French-International-School-of' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">9</th>
+      <td>Australian International School</td>
+         <td>(300 Feet, Purbachal Road) Joarshahara, Khilkhet, Dhaka-1229</td>
+       <td><button onclick="window.location.href='https://www.ausisdhaka.net/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">10</th>
+      <td>Angelica International School</td>
+        <td>B-83/1, Bazar Road, Savar, Dhaka-1340</td>
+        <td><button onclick="window.location.href='https://angelica.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Prime Bank English Medium School</td>
+         <td>Uttara branch: House-11, Road-20/C, Sector-4, Uttara, Dhaka || Mirpur Branch: House-05, Avenue 2, Block-A, Section-11, Mirpur,Dhaka</td>
+       <td><button onclick="window.location.href='http://www.primebankenglishmediumschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">12</th>
+      <td>Government Laboratory High School, Mymensingh</td>
+         <td>Mymensingh</td>
+       <td><button onclick="window.location.href='https://deb111828.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+ <tr>
+      <th scope="row">13</th>
+      <td>Shaheed Ramiz Uddin Cantonment School</td>
+        <td>Adjacent to Dhaka Cantonment MES Flyover, Dhaka Cantonment, Dhaka-1206</td>
+        <td><button onclick="window.location.href='https://www.facebook.com/ShaheedRamizUddinCantonmentSchool/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Creative International School</td>
+         <td>Sonir Akhra, Demra, Dhaka-1361</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/creativeinternationalschool/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">15</th>
+      <td>Tarundia Jagat Memorial High School</td>
+         <td>Tarundia, Ishwarganj, Mymensingh</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/Tarundia-Jagat-Memorial-High-School/446718952052327' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">16</th>
+      <td>Rangon Academy</td>
+        <td>Main Campus : House # 30, Road # 11, Sector# 10, Uttara, Dhaka 1230 || Kamarpara Campus: MAMS school, kamarpara, Turag Dhaka</td>
+        <td><button onclick="window.location.href='https://uttara.infoisinfo.com.bd/card/rangon-academy/53412' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Mirpur International Tutorial</td>
+         <td>Mirpur-2,Road# 2, House #16, sec#2 Block#D Mirpur Dhaka-1216.</td>
+       <td><button onclick="window.location.href='https://mit-bd.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">18</th>
+      <td>St Gregory's School</td>
+         <td>82, Municipal Road, Luxmibazar, Dhaka-1100</td>
+       <td><button onclick="window.location.href='http://www.sghsbd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">19</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>Mohammadpur Preparatory School & College</td>
+         <td>3/3,Asad Avenue,Mohammadpur,Dhaka</td>
+       <td><button onclick="window.location.href='https://www.mpsc.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">21</th>
+      <td>Queen's School & College</td>
+         <td>School Campus: 18, Adorsha Chayanir Housing, Ring Road, Adabor, Dhaka ||
+College Campus: 1132/C, Baitul Aman Housing Society, Adabor, Dhaka</td>
+       <td><button onclick="window.location.href='http://www.queenscollege.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">22</th>
+      <td>A. K. High School and College</td>
+        <td>Dania(near Jatrabari), Kadamtali, Dhaka-1236</td>
+        <td><button onclick="window.location.href='https://akschoolandcollege.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">23</th>
+      <td>Kids Tutorial</td>
+         <td>7/A Circuit House Rd, Ramna, Shantinagar, Dhaka- 1000</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/Kids-Tutorial-School-Dhaka/329486620414067' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">24</th>
+      <td>Green Bud School</td>
+         <td>63/2 Purana Paltan Line, Dhaka- 1000	</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/category/School/Green-Bud-School-337047176631954/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+   <tr>
+      <th scope="row">25</th>
+      <td>Mangrove School</td>
+        <td>7/8, Block-D, Lalmatia, Dhaka-1207</td>
+        <td><button onclick="window.location.href='https://mangrove.business.site/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">26</th>
+      <td>Academia School</td>
+         <td>Main Campus: House-6/10, Block-F, Satmasjid Road, Lalmatia, Dhaka-1207</td>
+       <td><button onclick="window.location.href='http://academiabd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">27</th>
+      <td>Adroit International School</td>
+         <td>2/7, Block-F, Lalmatia, Dhaka 1207</td>
+       <td><button onclick="window.location.href='http://adroitschoolbd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">28</th>
+      <td>Japanese School Dhaka</td>
+        <td>Plot No. 9, Block-H, Pragati Sharani Road, Baridhara, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://www.isbi.com/school/4279/japanese-school-in-dhaka.php' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">29</th>
+      <td>St. Peters School of London</td>
+         <td>Dhanmondi Branch:Road# 7A, House # 74/A Dhanmondi,Dhaka || Uttara Branch: House # 22, Sector#13(Opposite of Agora)Uttara</td>
+       <td><button onclick="window.location.href='http://stpetersschool.edu.bd/contact.php' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">30</th>
+      <td>Vision Global School</td>
+         <td>House-17, Road-10, Gulshan-1, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://www.visionglobalschool.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">31</th>
+      <td>Regent College, Dhaka</td>
+        <td>House 23, Road 113, Gulshan – 2, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://www.online-dhaka.com/english/105_108_4300_0-regent-college-dhaka.html' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">32</th>
+      <td>International Turkish Hope School</td>
+         <td>Plot-7, Road-6, Sector-4 Uttara, Dhaka-1230</td>
+       <td><button onclick="window.location.href='http://ihsbd.net/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">33</th>
+      <td>Kakali High School, Dhaka</td>
+         <td>House 79, Satmasjid Road, Dhanmondi, Dhaka[</td>
+       <td><button onclick="window.location.href='http://kakolihsc.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">34</th>
+      <td>IBQ – Institute for British Qualifications</td>
+        <td>House # 57, Road # 02 (Lake Side Road), Sector # 05  Uttara</td>
+        <td><button onclick="window.location.href='https://www.facebook.com/ibqbd' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">35</th>
+      <td>Morning Glory School (MGS)</td>
+         <td>Dewan Idris Street, Savar Cantonment Dhaka, Bangladesh Savar</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/mgscsavarcantt/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">36</th>
+      <td>British International Kids School (BIKS)</td>
+         <td>13/b Tikatuly, Dhaka-1203</td>
+       <td><button onclick="window.location.href='http://www.britishkgschool.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+ <tr>
+      <th scope="row">37</th>
+      <td>Averroes International School</td>
+        <td>Primary & Secondary Section: 7/16, Block B, Lalmatia, Mohammadpur, Dhaka-1207</td>
+        <td><button onclick="window.location.href='https://aisd.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">38</th>
+      <td>Lakehead Grammar School</td>
+         <td>Gulshan Branch: House-SEB-6, Road-134, Gulshan-1, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/lgsbd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">39</th>
+      <td>Methodist English Medium School</td>
+         <td>250/1, 2nd Colony Mazar Road, Mirpur-1, Dhaka-1218</td>
+       <td><button onclick="window.location.href='http://www.mems.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">40</th>
+      <td>A. G. Church School Dhaka</td>
+        <td>House-401/1, New Eskaton Road, Dhaka</td>
+        <td><button onclick="window.location.href='http://agcs.com.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">41</th>
+      <td>ABC International School</td>
+         <td>75, North Chashara, Narayanganj-1400</td>
+       <td><button onclick="window.location.href='http://www.theabcis.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">42</th>
+      <td>Alfred International School and College</td>
+         <td>616-617, Dania Main Road, Kadamtoli, Dhaka-1236</td>
+       <td><button onclick="window.location.href='http://www.edusoftbd.com/aisc/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">43</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">44</th>
+      <td>JAAGO Foundation</td>
+         <td>86/1B, Sadek Khan Road, Rayer Bazar, Dhaka – 1209</td>
+       <td><button onclick="window.location.href='https://tinyurl.com/y28bc7r2' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">45</th>
+      <td>Dhamrai Hardinge High School and College</td>
+         <td>Dhamrai, Dhaka 1350</td>
+       <td><button onclick="window.location.href='https://deb107919.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">46</th>
+      <td>Daffodil International School</td>
+        <td>Permanent Campus: House-71, Road-9/A, Dhanmondi, Dhaka-1209 || Uttara Branch: House-3, Shonargaon Janapath, Sector-12, Uttara Model Town, Uttara, Dhaka-1230</td>
+        <td><button onclick="window.location.href='https://dis.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">47</th>
+      <td>Green Leaf International School (GLIS)</td>
+         <td>Rickshaw Stand 248, Donia, Dhaka</td>
+       <td><button onclick="window.location.href='http://greenleafsc.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">48</th>
+      <td>Mirpur Govt. High School</td>
+         <td>Mirpur-1, Bus Stand attached, Mirpur, Section-01, Dhaka-1216</td>
+       <td><button onclick="window.location.href='https://deb108185.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+<tr>
+      <th scope="row">49</th>
+      <td>Arcadia International School & College (AISCO)</td>
+        <td>2163 Rokeya villa, Madinabag, Rayerbag, Kadomtoly, Dhaka 1236</td>
+        <td><button onclick="window.location.href='https://tinyurl.com/yy2ka39o' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">50</th>
+      <td>Islami Bank International School & College</td>
+         <td>225 Senpara Parbata, Mirpur, Dhaka-1216</td>
+       <td><button onclick="window.location.href='http://ibiscdhaka.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">51</th>
+      <td>Cardiff International School Dhaka (CISD)</td>
+         <td>Senior Section: House # 60/A, Road # 27 (old), 16 (new), Junior Section: House: 2/9, Block- D, Lalmatia, Dhaka-1207</td>
+       <td><button onclick="window.location.href='http://www.cisdbd.net/index11.php' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">52</th>
+      <td>Barnamala Adarsha High School & College</td>
+        <td>Shonir Akhra, Jatrabari, Dhaka-1236</td>
+        <td><button onclick="window.location.href='http://barnamalasc.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">53</th>
+      <td>BAF Shaheen English Medium School</td>
+         <td>Tejgaon, Dhaka Cantonment, Dhaka-1206</td>
+       <td><button onclick="window.location.href='http://bafsems.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">6</th>
+      <td>Yale International School</td>
+         <td>House: 41, Road: 04, Sector: 03, Uttara Model Town, Dhaka-1230</td>
+       <td><button onclick="window.location.href='https://yis.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">7</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>French International School of Dhaka</td>
+         <td>House-45 Embassy Road, Plot 13, Baridhara, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://bd.ambafrance.org/The-French-International-School-of' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">9</th>
+      <td>Australian International School</td>
+         <td>(300 Feet, Purbachal Road) Joarshahara, Khilkhet, Dhaka-1229</td>
+       <td><button onclick="window.location.href='https://www.ausisdhaka.net/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">10</th>
+      <td>Angelica International School</td>
+        <td>B-83/1, Bazar Road, Savar, Dhaka-1340</td>
+        <td><button onclick="window.location.href='https://angelica.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Prime Bank English Medium School</td>
+         <td>Uttara branch: House-11, Road-20/C, Sector-4, Uttara, Dhaka || Mirpur Branch: House-05, Avenue 2, Block-A, Section-11, Mirpur,Dhaka</td>
+       <td><button onclick="window.location.href='http://www.primebankenglishmediumschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">12</th>
+      <td>Government Laboratory High School, Mymensingh</td>
+         <td>Mymensingh</td>
+       <td><button onclick="window.location.href='https://deb111828.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+ <tr>
+      <th scope="row">13</th>
+      <td>Shaheed Ramiz Uddin Cantonment School</td>
+        <td>Adjacent to Dhaka Cantonment MES Flyover, Dhaka Cantonment, Dhaka-1206</td>
+        <td><button onclick="window.location.href='https://www.facebook.com/ShaheedRamizUddinCantonmentSchool/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Creative International School</td>
+         <td>Sonir Akhra, Demra, Dhaka-1361</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/creativeinternationalschool/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">15</th>
+      <td>Tarundia Jagat Memorial High School</td>
+         <td>Tarundia, Ishwarganj, Mymensingh</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/Tarundia-Jagat-Memorial-High-School/446718952052327' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">16</th>
+      <td>Rangon Academy</td>
+        <td>Main Campus : House # 30, Road # 11, Sector# 10, Uttara, Dhaka 1230 || Kamarpara Campus: MAMS school, kamarpara, Turag Dhaka</td>
+        <td><button onclick="window.location.href='https://uttara.infoisinfo.com.bd/card/rangon-academy/53412' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Mirpur International Tutorial</td>
+         <td>Mirpur-2,Road# 2, House #16, sec#2 Block#D Mirpur Dhaka-1216.</td>
+       <td><button onclick="window.location.href='https://mit-bd.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">18</th>
+      <td>St Gregory's School</td>
+         <td>82, Municipal Road, Luxmibazar, Dhaka-1100</td>
+       <td><button onclick="window.location.href='http://www.sghsbd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">19</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>Mohammadpur Preparatory School & College</td>
+         <td>3/3,Asad Avenue,Mohammadpur,Dhaka</td>
+       <td><button onclick="window.location.href='https://www.mpsc.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">21</th>
+      <td>Queen's School & College</td>
+         <td>School Campus: 18, Adorsha Chayanir Housing, Ring Road, Adabor, Dhaka ||
+College Campus: 1132/C, Baitul Aman Housing Society, Adabor, Dhaka</td>
+       <td><button onclick="window.location.href='http://www.queenscollege.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">22</th>
+      <td>A. K. High School and College</td>
+        <td>Dania(near Jatrabari), Kadamtali, Dhaka-1236</td>
+        <td><button onclick="window.location.href='https://akschoolandcollege.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">23</th>
+      <td>Kids Tutorial</td>
+         <td>7/A Circuit House Rd, Ramna, Shantinagar, Dhaka- 1000</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/Kids-Tutorial-School-Dhaka/329486620414067' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">24</th>
+      <td>Green Bud School</td>
+         <td>63/2 Purana Paltan Line, Dhaka- 1000	</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/pages/category/School/Green-Bud-School-337047176631954/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+   <tr>
+      <th scope="row">25</th>
+      <td>Mangrove School</td>
+        <td>7/8, Block-D, Lalmatia, Dhaka-1207</td>
+        <td><button onclick="window.location.href='https://mangrove.business.site/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">26</th>
+      <td>Academia School</td>
+         <td>Main Campus: House-6/10, Block-F, Satmasjid Road, Lalmatia, Dhaka-1207</td>
+       <td><button onclick="window.location.href='http://academiabd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">27</th>
+      <td>Adroit International School</td>
+         <td>2/7, Block-F, Lalmatia, Dhaka 1207</td>
+       <td><button onclick="window.location.href='http://adroitschoolbd.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">28</th>
+      <td>Japanese School Dhaka</td>
+        <td>Plot No. 9, Block-H, Pragati Sharani Road, Baridhara, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://www.isbi.com/school/4279/japanese-school-in-dhaka.php' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">29</th>
+      <td>St. Peters School of London</td>
+         <td>Dhanmondi Branch:Road# 7A, House # 74/A Dhanmondi,Dhaka || Uttara Branch: House # 22, Sector#13(Opposite of Agora)Uttara</td>
+       <td><button onclick="window.location.href='http://stpetersschool.edu.bd/contact.php' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">30</th>
+      <td>Vision Global School</td>
+         <td>House-17, Road-10, Gulshan-1, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://www.visionglobalschool.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">31</th>
+      <td>Regent College, Dhaka</td>
+        <td>House 23, Road 113, Gulshan – 2, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://www.online-dhaka.com/english/105_108_4300_0-regent-college-dhaka.html' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">32</th>
+      <td>International Turkish Hope School</td>
+         <td>Plot-7, Road-6, Sector-4 Uttara, Dhaka-1230</td>
+       <td><button onclick="window.location.href='http://ihsbd.net/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">33</th>
+      <td>Kakali High School, Dhaka</td>
+         <td>House 79, Satmasjid Road, Dhanmondi, Dhaka[</td>
+       <td><button onclick="window.location.href='http://kakolihsc.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">34</th>
+      <td>IBQ – Institute for British Qualifications</td>
+        <td>House # 57, Road # 02 (Lake Side Road), Sector # 05  Uttara</td>
+        <td><button onclick="window.location.href='https://www.facebook.com/ibqbd' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">35</th>
+      <td>Morning Glory School (MGS)</td>
+         <td>Dewan Idris Street, Savar Cantonment Dhaka, Bangladesh Savar</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/mgscsavarcantt/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">36</th>
+      <td>British International Kids School (BIKS)</td>
+         <td>13/b Tikatuly, Dhaka-1203</td>
+       <td><button onclick="window.location.href='http://www.britishkgschool.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+ <tr>
+      <th scope="row">37</th>
+      <td>Averroes International School</td>
+        <td>Primary & Secondary Section: 7/16, Block B, Lalmatia, Mohammadpur, Dhaka-1207</td>
+        <td><button onclick="window.location.href='https://aisd.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">38</th>
+      <td>Lakehead Grammar School</td>
+         <td>Gulshan Branch: House-SEB-6, Road-134, Gulshan-1, Dhaka-1212</td>
+       <td><button onclick="window.location.href='https://www.facebook.com/lgsbd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">39</th>
+      <td>Methodist English Medium School</td>
+         <td>250/1, 2nd Colony Mazar Road, Mirpur-1, Dhaka-1218</td>
+       <td><button onclick="window.location.href='http://www.mems.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">40</th>
+      <td>A. G. Church School Dhaka</td>
+        <td>House-401/1, New Eskaton Road, Dhaka</td>
+        <td><button onclick="window.location.href='http://agcs.com.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">41</th>
+      <td>ABC International School</td>
+         <td>75, North Chashara, Narayanganj-1400</td>
+       <td><button onclick="window.location.href='http://www.theabcis.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">42</th>
+      <td>Alfred International School and College</td>
+         <td>616-617, Dania Main Road, Kadamtoli, Dhaka-1236</td>
+       <td><button onclick="window.location.href='http://www.edusoftbd.com/aisc/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+     <tr>
+      <th scope="row">43</th>
+      <td>Sir John Wilson School</td>
+        <td>Main Campus (KGII to A'Level): United City, Satarkul, Dhaka-1229 ||
+       Early Section (PG-KGI): House-5, Road-77, Gulshan, Dhaka-1212</td>
+        <td><button onclick="window.location.href='http://sjwschool.org/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">44</th>
+      <td>JAAGO Foundation</td>
+         <td>86/1B, Sadek Khan Road, Rayer Bazar, Dhaka – 1209</td>
+       <td><button onclick="window.location.href='https://tinyurl.com/y28bc7r2' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">45</th>
+      <td>Dhamrai Hardinge High School and College</td>
+         <td>Dhamrai, Dhaka 1350</td>
+       <td><button onclick="window.location.href='https://deb107919.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">46</th>
+      <td>Daffodil International School</td>
+        <td>Permanent Campus: House-71, Road-9/A, Dhanmondi, Dhaka-1209 || Uttara Branch: House-3, Shonargaon Janapath, Sector-12, Uttara Model Town, Uttara, Dhaka-1230</td>
+        <td><button onclick="window.location.href='https://dis.edu.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">47</th>
+      <td>Green Leaf International School (GLIS)</td>
+         <td>Rickshaw Stand 248, Donia, Dhaka</td>
+       <td><button onclick="window.location.href='http://greenleafsc.com/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+<tr>
+      <th scope="row">48</th>
+      <td>Mirpur Govt. High School</td>
+         <td>Mirpur-1, Bus Stand attached, Mirpur, Section-01, Dhaka-1216</td>
+       <td><button onclick="window.location.href='https://deb108185.dhakaeducationboard.gov.bd/' ;" target="_blank">Click</button> </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
+
+
+

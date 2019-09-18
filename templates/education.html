@@ -1,0 +1,127 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Site</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Ruda:400,900,700' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/prettyphoto/css/prettyphoto.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/hover/hoverex-all.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/jetmenu/jetmenu.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owl-carousel/owl-carousel.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/colors/blue.css' %}">
+
+</head>
+<body>
+<div class="topbar clearfix">
+    <div class="container">
+      <div class="col-lg-12 text-right">
+        <div class="social_buttons">
+          <a href="www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end topbar -->
+<header class="header">
+    <div class="container">
+      <div class="site-header clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-12 title-area">
+          <div class="site-title" id="title">
+            <a href=""title="">
+              <h1>sites<span>.com</span></h1>
+            </a>
+          </div>
+        </div>
+        <!-- title area -->
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div id="nav" class="right">
+            <div class="container clearfix">
+              <ul id="jetmenu" class="jetmenu blue">
+                  <li class="active"><a href="{% url 'home' %}"><h5>Home</h5></a>
+                </li>
+                        <li><a href="{% url 'about' %}"><h5>About Us</h5></a>
+                  <li><a href="{% url 'education' %}" ><h5><i class="glyphicon glyphicon-education"> Education</i></h5></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+                   <li><a href="#"><h5>login</h5></a>
+                  <ul class="dropdown">
+                    <li><a href="digital-download.html">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+        </div>
+        <!-- title area -->
+      </div>
+      <!-- site header -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header -->
+<h2>Choose</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link Site</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>School List</td>
+      <td><button onclick="window.location.href='{% url 'schools' %}' ;" target="_blank">Click</button> </td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>College List</td>
+     <td><button onclick="window.location.href='{% url 'college' %}' ;" target="_blank">Click</button> </td>
+
+    </tr>
+ <tr>
+      <th scope="row">2</th>
+      <td>University List</td>
+     <td><button onclick="window.location.href='{% url 'university' %}' ;" target="_blank">Click</button> </td>
+
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

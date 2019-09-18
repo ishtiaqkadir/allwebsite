@@ -1,0 +1,473 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>sites.com </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Ruda:400,900,700' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/prettyphoto/css/prettyphoto.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/hover/hoverex-all.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/jetmenu/jetmenu.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owl-carousel/owl-carousel.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/colors/blue.css' %}">
+
+
+</head>
+
+<body>
+  <div class="topbar clearfix">
+    <div class="container">
+      <div class="col-lg-12 text-right">
+        <div class="social_buttons">
+          <a href="www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end topbar -->
+
+  <header class="header">
+    <div class="container">
+      <div class="site-header clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-12 title-area">
+          <div class="site-title" id="title">
+            <a href=""title="">
+              <h1>sites<span>.com</span></h1>
+            </a>
+          </div>
+        </div>
+        <!-- title area -->
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div id="nav" class="right">
+            <div class="container clearfix">
+              <ul id="jetmenu" class="jetmenu blue">
+                  <li class="active"><a href="{% url 'home' %}"><h5>Home</h5></a>
+                </li>
+                        <li><a href="{% url 'about' %}"><h5>About Us</h5></a>
+                  <li><a href="{% url 'education' %}" ><h5><i class="glyphicon glyphicon-education"> Education</i></h5></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+                   <li><a href="#"><h5>login</h5></a>
+                  <ul class="dropdown">
+                    <li><a href="digital-download.html">Products Page</a></li>
+
+                  </ul>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+        </div>
+        <!-- title area -->
+      </div>
+      <!-- site header -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header -->
+
+  <section id="intro">
+    <div class="container">
+      <div class="ror">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Build your business  </h1>
+          <p>You have got the will. We have got the way. With you from first sell to full scale </p>
+
+        </!div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section1">
+    <div class="container">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="servicebox text-center">
+          <div class="service-icon">
+            <div class="dm-icon-effect-1" data-effect="slide-left">
+              <a href="#" class=""> <i class="active dm-icon fa fa-bars fa-3x"></i> </a>
+            </div>
+            <div class="servicetitle">
+              <h4>Sell everywhere</h4>
+              <hr>
+            </div>
+            <p>Use one platform to sell products to anyone, anywhere—online with your ecommerce store, online marketplaces, and social media, and in-person with point of sale.</p>
+          </div>
+          <!-- service-icon -->
+        </div>
+        <!-- servicebox -->
+      </div>
+      <!-- large-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="servicebox text-center">
+          <div class="service-icon">
+            <div class="dm-icon-effect-1" data-effect="slide-bottom">
+              <a href="#" class=""> <i class="active dm-icon fa fa-laptop fa-3x"></i> </a>
+            </div>
+            <div class="servicetitle">
+              <h4>Market your business</h4>
+              <hr>
+            </div>
+            <p>Our goal is to give the SMBs a platform where they can start business money and generate profit, Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze campaigns on Facebook and Google.
+
+.  </p>
+          </div>
+          <!-- service-icon -->
+        </div>
+        <!-- servicebox -->
+      </div>
+      <!-- large-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="servicebox text-center">
+          <div class="service-icon">
+            <div class="dm-icon-effect-1" data-effect="slide-right">
+              <a href="#" class=""> <i class="active dm-icon fa fa-book fa-3x"></i> </a>
+            </div>
+            <div class="servicetitle">
+              <h4>Manage Everything</h4>
+              <hr>
+            </div>
+            <p>Use a single dashboard to manage orders, shipping, and payments anywhere you go. Gain the insights and knowledge you need to grow.
+
+</p>
+          </div>
+          <!-- service-icon -->
+        </div>
+        <!-- servicebox -->
+      </div>
+      <!-- large-4 -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section -->
+
+  <section class="section5">
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-12 columns">
+        <div class="widget" data-effect="slide-left">
+          <img src="{% static 'img/slider_02.png' %}" alt="">
+        </div>
+        <!-- end widget -->
+      </div>
+      <!-- large-6 -->
+      <div class="col-lg-6 col-md-6 col-sm-12 columns">
+        <div class="widget clearfix">
+          <div class="services_lists">
+
+            <div class="services_lists_boxes clearfix">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="services_lists_boxes_icon" data-effect="slide-bottom">
+                  <a href="#" class=""> <i class="active dm-icon-medium fa fa-key fa-2x"></i> </a>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="servicetitle">
+                  <h4>Create your brand</h4>
+                  <hr>
+                </div>
+                <p>Get started with with the perfect business name, focus what you want to sell get a perfect name or we can help you with this </p>
+              </div>
+            </div>
+            <!-- services_lists_boxes -->
+
+            <div class="services_lists_boxes clearfix">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="services_lists_boxes_icon" data-effect="slide-bottom">
+                  <a href="#" class=""> <i class="active dm-icon-medium fa fa-download fa-2x"></i> </a>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="servicetitle">
+                  <h4>Build online store</h4>
+                  <hr>
+                </div>
+                <p>Upload all the information about the stores to get launch, don't miss anything. </p>
+              </div>
+            </div>
+            <!-- services_lists_boxes -->
+
+
+            <div class="services_lists_boxes clearfix">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="services_lists_boxes_icon_none" data-effect="slide-bottom">
+                  <a href="#" class=""> <i class="active dm-icon-medium fa fa-dollar fa-2x"></i> </a>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="servicetittle">
+                  <h4>Payment</h4>
+                  <hr>
+                </div>
+                <p>Payment is not an issue anymore. keeps record of every transaction with multiple payment gateway facility</p>
+              </div>
+            </div>
+            <!-- services_lists_boxes -->
+
+          </div>
+          <!-- services_lists -->
+        </div>
+        <!-- end widget -->
+      </div>
+      <!-- large-6 -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section2 -->
+
+
+  <!-- end section1 -->
+
+  <section class="section2">
+    <div class="container">
+      <div class="message text-center">
+        <h2 class="big-title">Your <span>portfolio</span> should standout!</h2>
+        <p class="small-title">Lorem Ipsum is simply dummy text of the printing and typesetting industy has been the industry"s standard.</p>
+        <a class="button large" href="#">ABOUT OUR SERVICES</a> <a class=" dmbutton large" href="#">CONTACT US TODAY</a>
+      </div>
+      <!-- end message -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section2 -->
+
+  <section class="section1 text-center">
+    <div class="container">
+      <div class="general-title">
+        <h3>AFFORDABLE PRICES</h3>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-effect="slide-bottom">
+          <div class="custom-box">
+            <div class="servicetitle">
+              <h4>Free Trial</h4>
+              <hr>
+            </div>
+            <div class="icn-main-container">
+              <span class="icn-container"> &#2547; 0</span>
+            </div>
+            <p>One month of free trial.Students will get 2 month of free trial </p>
+            <ul class="pricing">
+              <li>Limited Product</li>
+              <li>Domain</li>
+              <li>Basic Payment Option</li>
+                <li><strike>Marketing Support</strike></li>
+
+                <li><strike>Live Chat</strike></li>
+              <li>24/7 Support</li>
+            </ul>
+            <a class="btn btn-primary" href="#">Get Your Free Trial</a>
+          </div>
+          <!-- end custombox -->
+        </div>
+        <!-- end col-4 -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-effect="slide-bottom">
+          <div class="custom-box">
+            <div class="servicetitle">
+              <h4>Standard Pack</h4>
+              <hr>
+            </div>
+            <div class="icn-main-container">
+              <span class="icn-container">&#2547;2000</span>
+            </div>
+            <p>Most Subscribed package.Monthly minimal amount of charge to get the service</p>
+            <ul class="pricing">
+              <li></li>
+              <li>Store Domain</li>
+              <li>Payment Gateway</li>
+              <li>Marketing Support</li>
+
+              <li>Live chat</li>
+              <li>24/7 Support</li>
+            </ul>
+            <a class="btn btn-primary" href="#">Subscribe Now</a>
+          </div>
+          <!-- end custombox -->
+        </div>
+        <!-- end col-4 -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-effect="slide-bottom">
+          <div class="custom-box">
+            <div class="servicetitle">
+              <h4>Ultra Pack</h4>
+              <hr>
+            </div>
+            <div class="icn-main-container">
+              <span class="icn-container">&#2547;5000</span>
+            </div>
+            <p>Best for the medium enterprises with many support and service.</p>
+            <ul class="pricing">
+              <li>500 Mb Storage</li>
+              <li>Store Domain</li>
+              <li>Payment gateway</li>
+              <li>Marketing Support & Free Booklet</li>
+
+              <li>Live Chat</li>
+              <li>24/7 Support</li>
+            </ul>
+            <a class="btn btn-primary" href="#">Subscribe Now</a>
+          </div>
+          <!-- end custombox -->
+        </div>
+        <!-- end col-4 -->
+
+      </div>
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section1 -->
+
+  <section class="section3">
+    <div class="container withpadding">
+      <div class="message">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <h3>Grab the attention of your customers!</h3>
+          <p>Displayed on the top of your store front, attract the buyers for giving a them a good vibe. **Not for Free trial</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a class="dmbutton button large pull-right" href="#"><i class="fa fa-download"></i> GET A QUOTE</a>
+        </div>
+      </div>
+      <!-- end message -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section3 -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">About us</h4>
+        <p>Millions of small merchants in Bangladesh are moving their businesses online, but great e-commerce tools aimed at these small businesses do not exist. We aim to combine world-class engineering with local know-how to creating..</p>
+        <a class="button small" href="#">read more</a>
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Support</h4>
+         <ul class="contact_details">
+          <li><i class="fa fa-text-width-o"></i> 24/7 Support</li>
+          <li><i class="fa fa-text-width-o"></i> Help Center</li>
+          <li><i class="fa fa-text-width-o"></i> Our Forum</li>
+          <li><i class="fa fa-text-width-o"></i> Store Setup Documentation</li>
+           <li><i class="fa fa-text-width-o"></i> Videos</li>
+             <li><i class="fa fa-text-width-o"></i> Stock Photos</li>
+        </ul>
+        <!-- recent posts -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Get In Touch</h4>
+        <ul class="contact_details">
+          <li><i class="fa fa-envelope-o"></i> info@smb.com</li>
+          <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
+          <li><i class="fa fa-home"></i> Bashundhara r/a,Dhaka, Bangladesh.</li>
+          <li><a href="https://goo.gl/maps/zkSPTDrA9Lh3AoNEA" target="_blank"><i class="fa fa-map-marker"></i> View large map</a></li>
+        </ul>
+        <!-- contact_details -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Platinum Merchandisers</h4>
+        <ul class="flickr">
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_01.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_02.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_03.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_04.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_05.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_06.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_07.jpg' %}"></a></li>
+          <li><a href="#"><img alt="" src="{% static 'img/flickr_08.jpg' %}"></a></li>
+        </ul>
+      </div>
+      <!-- end widget -->
+    </div>
+    <!-- end container -->
+
+    <div class="copyrights">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
+          <p>Copyright © 2019 - All rights reserved</p>
+          <div class="credits">
+            <!--
+              You are NOT allowed to delete the credit link to TemplateMag with free version.
+              You can delete the credit link only if you bought the pro version.
+              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
+              Licensing information: https://templatemag.com/license/
+            -->
+            to SMB Bangladesh <a href="#">#</a>
+          </div>
+        </div>
+        <!-- end widget -->
+        <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
+          <div class="footer-menu right">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="https://goo.gl/maps/zkSPTDrA9Lh3AoNEA">Sitemap</a></li>
+              <li><a href="#">Site Terms</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end large-6 -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+  </footer>
+  <!-- end footer -->
+  <div class="dmtop">Scroll to Top</div>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/php-mail-form/validate.js' %}"></script>
+  <script src="{% static 'lib/prettyphoto/js/prettyphoto.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.min.js' %}"></script>
+  <script src="{% static 'lib/hover/hoverdir.js' %}"></script>
+  <script src="{% static 'lib/hover/hoverex.min.js' %}"></script>
+  <script src="{% static 'lib/unveil-effects/unveil-effects.js' %}"></script>
+  <script src="{% static 'lib/owl-carousel/owl-carousel.js' %}"></script>
+  <script src="{% static 'lib/jetmenu/jetmenu.js' %}"></script>
+  <script src="{% static 'lib/animate-enhanced/animate-enhanced.min.js' %}"></script>
+  <script src="{% static 'lib/jigowatt/jigowatt.js' %}"></script>
+  <script src="{% static 'lib/easypiechart/easypiechart.min.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
